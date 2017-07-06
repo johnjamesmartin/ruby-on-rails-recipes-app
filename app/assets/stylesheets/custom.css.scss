@@ -36,11 +36,7 @@ $col-accent: #4169E1;
 }
 
 .jumbotron {
-	/*
-	background-image: url('http://www.fnstatic.co.uk/images/content/recipe/chicken-cutlets-with-orange-and-rocket.jpg');
-	background-position: 30% 40%;*/
-
-	background-image: url('cover_image.png');
+	background-image: asset-url('cover_image.png');
 	background-position: 0px -50px;
 	background-size: cover;
 	border: 1px solid #BBB;
