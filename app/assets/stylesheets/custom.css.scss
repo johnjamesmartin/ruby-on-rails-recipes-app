@@ -1,2 +1,69 @@
+$navbar-default-bg: #111;
+
+$col-dark: #111;
+$col-light: #FFF;
+$col-accent: #4169E1;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+* {
+	border-radius: 0px !important;
+}
+
+.btn {
+	font-weight: 300;
+}
+
+.btn-accent {
+	background-color: $col-accent;
+}
+
+.btn-accent:active, .btn-accent:focus {
+	background-color: darken($col-accent, 5%) !important;
+}
+
+.btn-accent:hover {
+	background-color: lighten($col-accent, 5%);
+}
+
+.center {
+	text-align: center;
+}
+
+.footer-right {
+	float: right;
+}
+
+.jumbotron {
+	background-image: asset-url('cover_image.png');
+	background-size: 100% 100%;
+	border: 1px solid #BBB;
+}
+
+.jumbotron .btn {
+	box-shadow: 1px 1px 1px $col-dark;
+}
+
+.jumbotron h1, .jumbotron h2 {
+	color: $col-light;
+	font-weight: 300;
+	letter-spacing: -1px;
+	margin-bottom: 30px;
+	text-align: center;
+	text-shadow: 1px 1px 1px $col-dark;
+}
+
+#logo {
+	color: $col-light;
+	float: left;
+	font-size: 1.7em;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+
+#logo:hover {
+	color: $col-light;
+	text-decoration: none;
+}
