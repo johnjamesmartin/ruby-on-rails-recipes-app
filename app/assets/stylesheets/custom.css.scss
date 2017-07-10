@@ -7,7 +7,7 @@ $col-accent: #4169E1;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-* {
+*:not(.img-circle) {
 	border-radius: 0px !important;
 }
 
@@ -17,6 +17,7 @@ $col-accent: #4169E1;
 
 .btn-accent {
 	background-color: $col-accent;
+	color: $col-light !important;
 }
 
 .btn-accent:active, .btn-accent:focus {
@@ -27,12 +28,32 @@ $col-accent: #4169E1;
 	background-color: lighten($col-accent, 5%);
 }
 
+.btn-danger {
+	color: $col-light !important;
+}
+
 .center {
 	text-align: center;
 }
 
+.colormatch {
+	color: $col-accent;
+}
+
+.chef_info {
+	margin-top: 10px;
+}
+
+.description {
+	margin-top: 0;
+}
+
 .footer-right {
 	float: right;
+}
+
+.img-circle {
+	border-radius: 100%;
 }
 
 .jumbotron {
@@ -67,4 +88,15 @@ $col-accent: #4169E1;
 #logo:hover {
 	color: $col-light;
 	text-decoration: none;
+}
+
+.recipe-actions {
+  padding-top: 5px;
+  a {
+    color: $col-light;
+  }
+}
+
+.well a {
+	color: $col-accent;
 }
