@@ -10,7 +10,10 @@ end
 gem 'rails', '~> 5.1.2'
 # Bootstrap SASS
 gem 'bootstrap-sass', '~> 3.3.6'
-
+# Pagination gem
+gem 'will_paginate', '3.1.0'
+# Pagination for Bootstrap
+gem 'bootstrap-will_paginate', '0.0.10'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets

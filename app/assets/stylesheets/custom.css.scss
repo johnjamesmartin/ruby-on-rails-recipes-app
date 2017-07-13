@@ -48,6 +48,12 @@ $col-accent: #4169E1;
 	margin-top: 10px;
 }
 
+.chef-title {
+  color: $col-accent;
+  font-size: 1.25em;
+	font-weight: 400;
+}
+
 .description {
 	margin-top: 0;
 }
@@ -78,6 +84,11 @@ $col-accent: #4169E1;
 	margin-bottom: 30px;
 	text-align: center;
 	text-shadow: 1px 1px 1px $col-dark;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
 }
 
 #logo {
