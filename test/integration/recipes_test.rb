@@ -31,6 +31,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
   # 3. GET recipes show:
 
   test "should get recipes show" do
+    sign_in_as(@chef, "password")
     get recipe_path(@recipe)
     assert_template 'recipes/show'
     assert_match @recipe.name, response.body
@@ -45,6 +46,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
   # 4. Create new valid recipe:
 
   test "create new valid recipe" do
+    sign_in_as(@chef, "password")
     get new_recipe_path
     assert_template 'recipes/new'
     name_of_recipe = "chicken saute"
@@ -61,6 +63,7 @@ class RecipesTest < ActionDispatch::IntegrationTest
   # 5. Reject invalid recipe:
 
   test "reject invalid recipe submissions" do
+    sign_in_as(@chef, "password")
     get new_recipe_path
     assert_template 'recipes/new'
     assert_no_difference 'Recipe.count' do
@@ -71,4 +74,5 @@ class RecipesTest < ActionDispatch::IntegrationTest
     assert_select 'div.panel-body'
   end
 
+  
 end
