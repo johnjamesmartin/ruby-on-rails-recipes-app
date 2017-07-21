@@ -11,6 +11,11 @@ $col-accent: #4169E1;
 	border-radius: 0px !important;
 }
 
+.badge {
+	background-color: #DDD;
+	border: 1px solid #FFF;
+}
+
 .btn {
 	font-weight: 300;
 }
@@ -114,4 +119,9 @@ $col-accent: #4169E1;
 
 .well a {
 	color: $col-accent;
+}
+
+
+.input_checkbox input {
+	width: auto !important;
 }
